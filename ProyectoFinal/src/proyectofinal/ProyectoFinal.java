@@ -1,5 +1,4 @@
 
-package proyectofinal;
 
 import java.awt.FlowLayout;
 import javax.swing.JButton;
@@ -17,15 +16,15 @@ public class ProyectoFinal {
     private static void crearVentana() {
         JFrame ventana = new JFrame("Mi primer programa con Swing");
         JLabel mensaje = new JLabel("Presiona el botón");
-        JButton boton = new JButton("Saludar");
+        JButton boton = new JButton("Hola");
 
         // Esta acción ocurre cada vez que el usuario pulsa el botón.
-        boton.addActionListener(evento -> mensaje.setText("¡Hola! Ya usaste Swing"));
+        boton.addActionListener(evento -> mensaje.setText("Estoy usando swing en Java"));
 
         ventana.setLayout(new FlowLayout());
         ventana.add(mensaje);
         ventana.add(boton);
-        ventana.setSize(360, 120);
+        ventana.setSize(500, 300);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setLocationRelativeTo(null);
         ventana.setVisible(true);
