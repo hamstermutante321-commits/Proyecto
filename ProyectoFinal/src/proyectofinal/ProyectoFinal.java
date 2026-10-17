@@ -24,7 +24,7 @@ public class ProyectoFinal {
         ventana.setLayout(new FlowLayout());
         ventana.add(mensaje);
         ventana.add(boton);
-        ventana.setSize(500, 300);
+        ventana.setSize(400, 300);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setLocationRelativeTo(null);
         ventana.setVisible(true);
